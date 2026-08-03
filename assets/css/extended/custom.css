@@ -1,3 +1,16 @@
+/* ========== 首页简介：去除卡片与悬停效果，与背景融合 ========== */
+.home-info {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: var(--gap) 0;
+}
+
+.home-info:hover,
+.home-info a:focus-within {
+    transform: none !important;
+}
+
 /* ========== 文章卡片样式 ========== */
 .post-entry,
 .first-entry {
@@ -84,5 +97,11 @@
 .menu a span.active {
     font-weight: 700;
     color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: none;
+    text-decoration: none;
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-size: 100% 2px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
 }
