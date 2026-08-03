@@ -1,0 +1,70 @@
+baseURL: https://aik64.github.io/
+title: AIK64 Blog
+theme: ["PaperMod"]
+
+languageCode: zh-cn
+defaultContentLanguage: zh-cn
+hasCJKLanguage: true
+
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "AIK64 的个人博客"
+  author: AIK64
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  ShowRssButtonInSectionTermList: true
+  disableSpecial1stPost: false
+  comments: false
+
+  homeInfoParams:
+    Title: "Hi, I'm AIK64"
+    Content: 欢迎来到我的个人博客，这里记录我的技术学习与生活随笔。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/aik64"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
