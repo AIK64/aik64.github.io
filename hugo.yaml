@@ -2,7 +2,7 @@ baseURL: https://aik64.github.io/
 title: AIK64 Blog
 theme: ["PaperMod"]
 
-languageCode: zh-cn
+locale: zh-CN
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
 

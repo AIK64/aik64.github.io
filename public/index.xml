@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Project</title>
+    <title>AIK64 Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <description>Recent content on AIK64 Blog</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 17:26:03 +0800</lastBuildDate>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 02 Aug 2026 20:30:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>每周随笔：从零开始搭建个人网站</title>
+      <link>http://localhost:1313/posts/weekly-notes-01/</link>
+      <pubDate>Sun, 02 Aug 2026 20:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/weekly-notes-01/</guid>
+      <description>这个周末我把自己的个人网站从零搭建了起来，选定了 Hugo + GitHub Pages 的方案，整个过程比想象中顺利。</description>
+    </item>
+    <item>
+      <title>Hugo &#43; PaperMod 主题配置指南</title>
+      <link>http://localhost:1313/posts/hugo-papermod-guide/</link>
+      <pubDate>Sat, 01 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hugo-papermod-guide/</guid>
+      <description>详细介绍如何配置 Hugo 的 PaperMod 主题，包括导航菜单、搜索功能、归档页面等常用功能的设置方法。</description>
+    </item>
+    <item>
+      <title>我的第一篇博客</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Fri, 31 Jul 2026 17:26:03 +0800</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
+      <description>这是我使用 Hugo 和 PaperMod 主题搭建个人博客的第一篇文章，记录了搭建过程和心得。</description>
     </item>
   </channel>
 </rss>
