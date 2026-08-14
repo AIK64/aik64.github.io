@@ -6,8 +6,22 @@
     <description>Recent content on AIK64 Blog</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 02 Aug 2026 20:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn-ClaudeCode</title>
+      <link>http://localhost:1313/posts/learn-claudecode/</link>
+      <pubDate>Tue, 11 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/learn-claudecode/</guid>
+      <description>Learn-ClaudeCode</description>
+    </item>
+    <item>
+      <title>Hugo 命令使用指南</title>
+      <link>http://localhost:1313/posts/how-to-use-hugo/</link>
+      <pubDate>Mon, 03 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-use-hugo/</guid>
+      <description>从零开始搭建基于 Hugo 与 PaperMod 主题的个人博客，涵盖仓库创建、Hugo 安装、主题配置、本地调试与文章创建等完整流程。</description>
+    </item>
     <item>
       <title>每周随笔：从零开始搭建个人网站</title>
       <link>http://localhost:1313/posts/weekly-notes-01/</link>
