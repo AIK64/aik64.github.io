@@ -1,0 +1,10 @@
+{
+  "name": "aik64-blog-oauth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "deploy": "npx wrangler@4 deploy",
+    "dev": "npx wrangler@4 dev"
+  }
+}

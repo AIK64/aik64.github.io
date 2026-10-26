@@ -62,6 +62,10 @@ menu:
       name: Tags
       url: /tags/
       weight: 40
+    - identifier: admin
+      name: 写作
+      url: /admin/
+      weight: 50
 
 outputs:
   home:

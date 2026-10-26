@@ -1,0 +1,12 @@
+name = "aik64-blog-oauth"
+main = "src/index.mjs"
+compatibility_date = "2026-10-26"
+workers_dev = true
+
+[vars]
+GITHUB_CLIENT_ID = "Ov23linQEKDEQcXe01St"
+SITE_ORIGIN = "https://aik64.github.io"
+ALLOWED_GITHUB_USER = "AIK64"
+GITHUB_REPO = "AIK64/aik64.github.io"
+
+# GITHUB_CLIENT_SECRET 必须通过 wrangler secret put 配置，不能写在此处。
