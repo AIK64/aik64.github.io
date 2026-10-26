@@ -132,7 +132,31 @@ node --test
 如果 Secret 泄露，在 GitHub OAuth App 中轮换 Secret，并更新 Cloudflare Secret。
 将来使用自定义博客域名时，需要同步更新 Hugo baseURL、CMS site_url/display_url、Worker SITE_ORIGIN 和 OAuth App Homepage URL。
 
-## 参考
+## 后台外观与回滚
+
+后台采用 PaperMod 的黑白灰配色、系统字体、细边框和圆角卡片，并增加博客品牌导航和主题切换。
+主题使用博客原有的 `pref-theme` 偏好，同一域名下与博客共享明暗设置。文章预览包含标题、日期、草稿标记、摘要、正文和标签。
+
+样式与逻辑文件：
+
+- `static/admin/papermod.css`：后台外观。
+- `static/admin/theme.js`：主题偏好和切换。
+- `static/admin/preview.css`、`preview.js`：正文预览。
+
+原版完整保存在 `backups/admin-before-papermod-20261026/admin/`。在仓库根目录运行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\backups\admin-before-papermod-20261026\restore.ps1
+```
+
+此脚本恢复原版入口和当时的 CMS 配置；新增样式文件不再被引用。恢复后推送部署，线上才会回滚。
+这次外观调整不需要重新部署 OAuth Worker。
+
+后台 CSS 按 Decap 组件名称覆盖样式。将来升级 Decap 时，应复查列表、编辑器、媒体弹窗和明暗主题；它不改变 Decap 本身的布局和业务功能。
+
+验证记录：使用独立临时目录中的 `test-repo` 后端检查了列表、编辑器预览、主题切换、演示保存流程与媒体弹窗，未向真实仓库提交测试文章。正式 `static/admin/config.yml` 仍使用 GitHub 后端。
+
+## 参考资料
 
 - https://decapcms.org/docs/github-backend/
 - https://decapcms.org/docs/configuration-options/

@@ -6,9 +6,22 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>博客写作后台 · AIK64</title>
     <link href="config.yml" type="text/yaml" rel="cms-config-url" />
+    <link href="papermod.css?v=20261026" rel="stylesheet" />
+    <script src="theme.js"></script>
   </head>
   <body>
+    <header class="blog-masthead">
+      <a class="blog-brand" href="/">AIK64 Blog<span> / 写作</span></a>
+      <nav aria-label="写作后台导航">
+        <a href="/">返回博客 <span aria-hidden="true">↗</span></a>
+        <button id="blog-theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+          <svg class="theme-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 0 1 11.2 3 9 9 0 1 0 21 12.8Z"/></svg>
+          <svg class="theme-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        </button>
+      </nav>
+    </header>
     <noscript>请启用 JavaScript 后使用写作后台。</noscript>
     <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+    <script src="preview.js"></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: AIK64/aik64.github.io
+  branch: master
+  # 部署 Worker 后，替换成实际地址；只填 origin，不带末尾斜杠。
+  base_url: https://aik64-blog-oauth.1607035868.workers.dev
+  auth_endpoint: auth
+  auth_scope: public_repo
+
+site_url: https://aik64.github.io
+display_url: https://aik64.github.io
+logo_url: ""
+locale: zh_Hans
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+slug:
+  encoding: unicode
+  clean_accents: false
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    folder: content/posts
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields: [date, title]
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 发布时间, name: date, widget: datetime }
+      - label: 草稿
+        name: draft
+        widget: boolean
+        default: true
+        hint: "关闭草稿并保存后才会在博客展示。公开仓库中的草稿源码仍然公开。"
+      - { label: 标签, name: tags, widget: list, required: false }
+      - { label: 分类, name: categories, widget: list, required: false }
+      - { label: 摘要, name: summary, widget: text, required: false }
+      - { label: 正文, name: body, widget: markdown }
